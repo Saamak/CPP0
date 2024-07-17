@@ -33,9 +33,8 @@ void	is_command(std::string cmd)
 int main(void)
 {
 	std::string cmd;
-	PhoneBook a;
+	PhoneBook p;
 
-	a.addcont
 	while (1)
 	{
 		print_menu();

@@ -7,6 +7,7 @@ void	display_contacts()
 // void	add()
 // {
 
+	this->array[1].username = dfsdf;
 
 
 

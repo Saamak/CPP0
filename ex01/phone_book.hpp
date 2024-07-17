@@ -19,11 +19,7 @@ class PhoneBook{
 
 	Contact array[8];
 
-	add_contact()
-	{
-
-		this->array[1].username = dfsdf;
-	}
+	void add_contact();
 
 };
 
