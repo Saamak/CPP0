@@ -1,8 +1,10 @@
 CXX = g++
 
-OUT = megaphone
+OUT = PhoneBook
 
-SRC = megaphone.cpp
+SRC = phone_book.cpp \
+	  main.cpp \
+	  contact.cpp
 
 all: $(OUT)
 
