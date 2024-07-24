@@ -4,7 +4,7 @@ OUT = PhoneBook
 
 SRC = phone_book.cpp \
 	  main.cpp \
-	  contact.cpp
+	#   contact.cpp
 
 all: $(OUT)
 

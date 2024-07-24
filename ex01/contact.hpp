@@ -11,7 +11,7 @@ class Contact{
 		std::string m_last_name;
 		std::string m_nick_name;
 		std::string darkest_secret;
-		unsigned int phone_number;
+		std::string phone_number;
 };
 
 #endif

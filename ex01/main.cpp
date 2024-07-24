@@ -2,6 +2,7 @@
 #include "contact.hpp"
 #include <stdlib.h>
 
+
 void	print_menu()
 {
 	printf(RESET"-------------------------|MENU|------------------- \nYou can use these commands :\n\n");
@@ -11,7 +12,7 @@ void	print_menu()
 
 }
 
-void	is_command(std::string cmd)
+void	is_command(std::string cmd, PhoneBook& p)
 {
 	if (cmd == "EXIT")
 	{
@@ -20,11 +21,15 @@ void	is_command(std::string cmd)
 	}
 	else if (cmd == "ADD")
 	{
-		std::cout << B_G"welcome to " << cmd << " section" << std::endl;
+		std::cout << B_G"Welcome to " << cmd << " section" << std::endl;
+		p.add_contact();
+		return ;
 	}
 	else if (cmd == "SEARCH")
 	{
-		std::cout << B_G"welcome to " << cmd << " sectio" << std::endl;
+		std::cout << B_G"Welcome to " << cmd << " section" << std::endl << std::endl;
+		p.display_contacts();
+		return ;
 	}
 	else
 		printf(B_R"\n  |  Wrong command\n\n");
@@ -39,14 +44,11 @@ int main(void)
 	{
 		print_menu();
 		std::cout << "\nType a cmd: ";
-		std::cin >> cmd;
-		system("clear");
-		is_command(cmd);
+		std::getline(std::cin, cmd);
+		system("clear"); //end of file EOF; if eof exit
+		is_command(cmd, p);
 	}
 	// std::cin >> C.m_first_name;
 	// std::cout << "first name : " << C.m_first_name << std::endl;
-
-
-
 	return 0;
 }

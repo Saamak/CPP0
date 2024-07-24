@@ -14,15 +14,17 @@
 # define BOLD "\x1B[1m"
 # define RESET "\x1B[0m"
 
+static int i = 0;
 
 class PhoneBook{
 
 	Contact array[8];
 
-	void add_contact();
-
+	public:
+		void add_contact();
+		void display_contacts();
 };
-
+// void add_contact();
 
 
 #endif
